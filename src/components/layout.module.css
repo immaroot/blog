@@ -1,3 +1,8 @@
+.site-title {
+    font-size: 3rem;
+    color: grey;
+    font-weight: 700;
+}
 .container {
     margin: auto;
     max-width: 500px;
