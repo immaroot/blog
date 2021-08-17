@@ -7,9 +7,9 @@ const BlogPage = ({data}) => {
         <Layout pageTitle="My Blog Posts">
             {
                 data.allMdx.nodes.map((node) => (
-                    <article key={node.id}>
+                    <article key={node.id} style={{ paddingTop: 20}}>
                         <h2>
-                            <Link to={`/blog/${node.slug}`}>
+                            <Link to={`/blog/${node.slug}`} style={{ textDecoration: "none",}}>
                                 {node.frontmatter.title}
                             </Link>
                         </h2>
