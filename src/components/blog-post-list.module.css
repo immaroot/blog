@@ -7,7 +7,8 @@
 }
 .post-heading a {
     font-size: 1.5em;
-    font-family: Montserrat;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
     color: #F27E7E;
     text-decoration: none;
 }
