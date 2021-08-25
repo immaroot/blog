@@ -1,6 +1,6 @@
 import * as React from "react"
 import Layout from "../../components/layout"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import BlogPostList from "../../components/blog-post-list";
 
 const BlogPage = ({data}) => {

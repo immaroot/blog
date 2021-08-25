@@ -3,10 +3,6 @@ import {Link, useStaticQuery, graphql} from "gatsby";
 import {
     siteTitle,
     container,
-    heading,
-    navLinks,
-    navLinkItem,
-    navLinkText
 } from "./layout.module.css"
 import Bio from "../components/bio"
 
