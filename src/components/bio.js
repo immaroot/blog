@@ -31,7 +31,12 @@ const Bio = () => {
                     borderRadius: `100%`,
                 }}
             />
-            <p>
+            <p  style={{
+                    marginLeft: 0,
+                    marginRight: 0,
+                    marginTop: "auto",
+                    marginBottom: "auto",
+            }}>
                 <a href={`https://www.twitter.com/${twitter}`}>
                     {author}
                 </a>
