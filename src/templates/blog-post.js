@@ -1,7 +1,7 @@
 import * as React from 'react'
 import {graphql, Link} from "gatsby"
-import { MDXRenderer } from "gatsby-plugin-mdx"
 import Layout from '../components/layout'
+import { MDXRenderer } from "gatsby-plugin-mdx"
 
 const BlogPost = ({data, pageContext}) => {
     let {
@@ -10,7 +10,9 @@ const BlogPost = ({data, pageContext}) => {
     } = pageContext
     return (
         <Layout pageTitle={data.mdx.frontmatter.title}>
-            <p>{data.mdx.frontmatter.date}</p>
+            <p style={{
+                fontSize: `0.85em`,
+            }}>{data.mdx.frontmatter.date}</p>
             <MDXRenderer>
                 {data.mdx.body}
             </MDXRenderer>
@@ -22,22 +24,20 @@ const BlogPost = ({data, pageContext}) => {
                     listStyle: `none`,
                     padding: 0,
                 }}>
-                    {previous && (
-                        <li>
+                    <li>
+                        {previous && (
                             <Link to={`/blog/${previous.slug}`}>
                                 ← {previous.frontmatter.title}
                             </Link>
-                        </li>
-                    )}
-
-                    {next && (
-                        <li>
+                        )}
+                    </li>
+                    <li>
+                        {next && (
                             <Link to={`/blog/${next.slug}`}>
                                 {next.frontmatter.title} →
                             </Link>
-                        </li>
-                    )}
-
+                        )}
+                    </li>
                 </ul>
             </nav>
         </Layout>

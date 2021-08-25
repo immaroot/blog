@@ -1,7 +1,10 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "New Gatsby Site",
+    siteUrl: "https://www.immaroot.com",
+    title: "immaroot",
+      author: "Killian Kelly",
+      twitter: "immaroot",
+      avatar: "avatar.png",
   },
   plugins: [
       "gatsby-plugin-gatsby-cloud",
