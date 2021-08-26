@@ -3,7 +3,11 @@ html  {
     font-family: "Merriweather", Georgia, serif;
 }
 
+p {
+    line-height: 1.8em;
+}
+
 a {
     color: #F27E7E;
-    text-decoration: none;
+    text-decoration: underline;
 }

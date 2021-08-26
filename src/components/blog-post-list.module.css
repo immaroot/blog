@@ -4,14 +4,12 @@
 
 .post-heading {
     margin: 0 0 10px 0;
+    font-size: 1.5em;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    color: #F27E7E;
+    text-decoration: none;
 }
-/*.post-heading a {*/
-/*    font-size: 1.5em;*/
-/*    font-family: "Montserrat", sans-serif;*/
-/*    font-weight: 800;*/
-/*    color: #F27E7E;*/
-/*    text-decoration: none;*/
-/*}*/
 
 .post-date {
     font-size: 0.85em;

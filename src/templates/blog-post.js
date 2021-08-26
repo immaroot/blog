@@ -1,7 +1,8 @@
 import * as React from 'react'
 import {graphql, Link} from "gatsby"
-import Layout from '../components/layout'
 import { MDXRenderer } from "gatsby-plugin-mdx"
+import BlogPostLayout from "../components/blog-post-layout"
+import Bio from "../components/bio";
 
 const BlogPost = ({data, pageContext}) => {
     let {
@@ -9,21 +10,23 @@ const BlogPost = ({data, pageContext}) => {
         next,
     } = pageContext
     return (
-        <Layout pageTitle={data.mdx.frontmatter.title}>
-            <h2 style={{
-                fontSize: "1.5em",
+        <BlogPostLayout pageTitle={data.mdx.frontmatter.title}>
+            <h1 style={{
+                margin: "10px 0",
+                fontSize: "2.5em",
                 fontFamily: "Montserrat, sans-serif",
                 fontWeight: 800,
                 color: "#F27E7E",
             }}>
                 {data.mdx.frontmatter.title}
-            </h2>
+            </h1>
             <p style={{
                 fontSize: `0.85em`,
             }}>{data.mdx.frontmatter.date}</p>
             <MDXRenderer>
                 {data.mdx.body}
             </MDXRenderer>
+            <Bio />
             <nav>
                 <ul style={{
                     display: `flex`,
@@ -48,7 +51,7 @@ const BlogPost = ({data, pageContext}) => {
                     </li>
                 </ul>
             </nav>
-        </Layout>
+        </BlogPostLayout>
     )
 }
 
