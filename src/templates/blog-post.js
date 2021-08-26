@@ -10,6 +10,14 @@ const BlogPost = ({data, pageContext}) => {
     } = pageContext
     return (
         <Layout pageTitle={data.mdx.frontmatter.title}>
+            <h2 style={{
+                fontSize: "1.5em",
+                fontFamily: "Montserrat, sans-serif",
+                fontWeight: 800,
+                color: "#F27E7E",
+            }}>
+                {data.mdx.frontmatter.title}
+            </h2>
             <p style={{
                 fontSize: `0.85em`,
             }}>{data.mdx.frontmatter.date}</p>

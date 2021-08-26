@@ -10,7 +10,12 @@ import {
 const BlogPostList = ({id, path, title, date, excerpt}) => {
     return (
         <article key={id} className={postContainer}>
-            <h2 className={postHeading}>
+            <h2  style={{
+                fontSize: "1.5em",
+                fontFamily: "Montserrat, sans-serif",
+                fontWeight: 800,
+                color: "#F27E7E",
+            }}>
                 <Link to={path}>
                     {title}
                 </Link>

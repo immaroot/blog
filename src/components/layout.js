@@ -5,6 +5,7 @@ import {
     container,
 } from "./layout.module.css"
 import Bio from "../components/bio"
+import Footer from "./footer";
 
 
 const Layout = ({pageTitle, children}) => {
@@ -25,6 +26,7 @@ const Layout = ({pageTitle, children}) => {
             </Link>
             <Bio />
             { children }
+            <Footer />
         </main>
     )
 }

@@ -4,6 +4,8 @@ module.exports = {
     title: "immaroot",
       author: "Killian Kelly",
       twitter: "immaroot",
+      github: "immaroot",
+      linkedIn: "killian-kelly-a305b4200",
       avatar: "avatar.png",
   },
   plugins: [
